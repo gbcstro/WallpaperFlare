@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Flare</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>     
+    <div class="bg">
+        <div class="content">
+            <img src="/logo.svg" alt="logo" class="center">
+            <div class="search">
+                <h1>A community to share your favorite HD Wallpaper</h1>
+                <form class="search-bar">
+                    <input type="search" placeholder="Search HD wallpapers in Wallpaperflare">
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <img src="/clouds.png" alt="" class="clouds">
+        
+    </div>
+
+    <div class="container">
+        <h1>Popular HD wallpapers</h1>
+        <br>
+        <div class="grid" id="img-grid">
+            
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        var dp = document.getElementById('img-grid');
+        var imgList = ['img/1.jpg','img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg','img/6.jpg']
+        
+
+        imgList.forEach(function(img){
+            dp.innerHTML += `
+                <figure class="img-item-">
+                    <img src="${img}" class="grid-image">
+                </figure>
+            `;
+        });
+
+    </script>
+
+</body>
+</html>

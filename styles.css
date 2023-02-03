@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg {
+    height: 750px;
+    background-image: url("/space-light-circle-planet-wallpaper-38f6cd38a0501c98c0cca14e880234ea.jpg");
+    background-repeat: no-repeat;
+    background-position: center -55px;
+    background-size: auto 150%;
+}
+
+.content {
+    padding: 100px 0px 12px 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.search {
+    padding: 12px;
+    text-align: center;
+    
+}
+
+.center {
+    padding: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+}
+
+.search h1 {
+    padding: 12px;
+    color: white;
+    font-size: 22px;
+}
+
+.search form {
+    padding: 20px;
+    display: block;
+}
+
+.search form input {
+    padding: 12px;
+    border-radius: 40px;
+    border-color: transparent;
+    box-shadow: 0 0 0 8px rgb(255 255 255 / 30%);
+    width: 50%;
+    font-size: 15px;
+}
+
+.search form input::placeholder {
+    font-size: 15px;
+}
+
+.search form input[type="search"]:focus {
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { 
+    display: none; 
+}
+
+.search form button  {
+    margin-left: -40px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+
+}
+
+.search form button i {
+   color: grey;
+   font-size: 18px;
+}
+
+.clouds {
+    background-position: top center;
+    height: 380px;
+    width: 100%;
+    background-size: auto 380px;
+    margin: 90px 0 -190px;
+}
+
+.container h1{
+    padding: 12px;
+    text-align: center;
+    color: #0171b3;
+    margin-top: -100px;
+    font-weight: 400;
+}
+
+.container .grid {
+    padding: 8px;
+    display: grid;
+    margin-top: 2%;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 12px;
+}
+
+.container .grid .img-item{
+    max-width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+}
+
+.container .grid .grid-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+
+
+
